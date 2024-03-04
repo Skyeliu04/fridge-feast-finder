@@ -1,0 +1,803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F3D479B2B0D4499009E10A7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D479A2B0D4499009E10A7 /* MainView.swift */; };
+		0F3D479F2B0D5004009E10A7 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D479E2B0D5004009E10A7 /* SignInView.swift */; };
+		0F3D47A12B0D5070009E10A7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D47A02B0D5070009E10A7 /* SignInViewController.swift */; };
+		0F3D47A32B0D5852009E10A7 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D47A22B0D5852009E10A7 /* CreateAccountView.swift */; };
+		0F3D47A52B0D5864009E10A7 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D47A42B0D5864009E10A7 /* CreateAccountViewController.swift */; };
+		0F3D47AB2B150D85009E10A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F3D47AA2B150D85009E10A7 /* GoogleService-Info.plist */; };
+		0F3D47AE2B150E18009E10A7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0F3D47AD2B150E18009E10A7 /* FirebaseAuth */; };
+		0F3D47B02B150E18009E10A7 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 0F3D47AF2B150E18009E10A7 /* FirebaseDatabase */; };
+		0F3D47B22B150E18009E10A7 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0F3D47B12B150E18009E10A7 /* FirebaseDatabaseSwift */; };
+		0F3D47B42B150E18009E10A7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0F3D47B32B150E18009E10A7 /* FirebaseFirestore */; };
+		0F3D47B62B150E18009E10A7 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0F3D47B52B150E18009E10A7 /* FirebaseFirestoreSwift */; };
+		0F3D47B82B150E18009E10A7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0F3D47B72B150E18009E10A7 /* FirebaseStorage */; };
+		0F3D47BB2B15114F009E10A7 /* ProgressSpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D47BA2B15114F009E10A7 /* ProgressSpinnerViewController.swift */; };
+		0F3D47BD2B15117A009E10A7 /* ProgressSpinnerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D47BC2B15117A009E10A7 /* ProgressSpinnerDelegate.swift */; };
+		0F3D47C12B152307009E10A7 /* CreateProgressIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D47C02B152307009E10A7 /* CreateProgressIndicatorManager.swift */; };
+		0F3D47C42B15342C009E10A7 /* DashBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D47C32B15342C009E10A7 /* DashBoardView.swift */; };
+		0F3D47C62B153448009E10A7 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D47C52B153448009E10A7 /* DashBoardViewController.swift */; };
+		0F3D47C92B153867009E10A7 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D47C82B153867009E10A7 /* Validations.swift */; };
+		0F3D47CD2B166EB4009E10A7 /* FFFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D47CC2B166EB4009E10A7 /* FFFTabBarController.swift */; };
+		0F3D47D22B169615009E10A7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D47D12B169615009E10A7 /* ProfileViewController.swift */; };
+		0F3D47D42B169626009E10A7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D47D32B169626009E10A7 /* ProfileView.swift */; };
+		0F3D47E02B1A7844009E10A7 /* FireBaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D47DF2B1A7844009E10A7 /* FireBaseConstants.swift */; };
+		0F3D47E42B1A78D9009E10A7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D47E32B1A78D9009E10A7 /* User.swift */; };
+		0F3D47E92B1A8DCA009E10A7 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0F3D47E82B1A8DCA009E10A7 /* SDWebImageSwiftUI */; };
+		0F3D47F62B1BCF58009E10A7 /* FindByIngredientsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D47F52B1BCF58009E10A7 /* FindByIngredientsResponse.swift */; };
+		0F3D47F82B1BDE68009E10A7 /* ProfileProgressManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D47F72B1BDE68009E10A7 /* ProfileProgressManager.swift */; };
+		0F3D47FA2B1BDF4B009E10A7 /* SignInProgressManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D47F92B1BDF4B009E10A7 /* SignInProgressManager.swift */; };
+		0F3D47FD2B1BF4B2009E10A7 /* UserRecipesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D47FC2B1BF4B2009E10A7 /* UserRecipesTableViewCell.swift */; };
+		0F3D47FF2B1BF6C4009E10A7 /* UserRecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D47FE2B1BF6C4009E10A7 /* UserRecipesViewController.swift */; };
+		0F3D48012B1BF72B009E10A7 /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D48002B1BF72B009E10A7 /* PostEntity.swift */; };
+		0F3D48032B1BF851009E10A7 /* UserRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D48022B1BF851009E10A7 /* UserRecipeView.swift */; };
+		0F3D48052B1C1726009E10A7 /* UserRecipeUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D48042B1C1726009E10A7 /* UserRecipeUploadView.swift */; };
+		0F3D48072B1C18F4009E10A7 /* UserRecipeUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D48062B1C18F4009E10A7 /* UserRecipeUploadViewController.swift */; };
+		0F3D48092B1CF880009E10A7 /* IngredientSelectionAPICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D48082B1CF880009E10A7 /* IngredientSelectionAPICall.swift */; };
+		0F3D480B2B1D7189009E10A7 /* UserRecipeUploadProgressManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D480A2B1D7189009E10A7 /* UserRecipeUploadProgressManager.swift */; };
+		0FB8BD272B1E5441008EB7C9 /* RecipeInstructionsAPICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB8BD262B1E5441008EB7C9 /* RecipeInstructionsAPICall.swift */; };
+		0FC1798E2B067A5200A1397A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1798D2B067A5200A1397A /* AppDelegate.swift */; };
+		0FC179902B067A5200A1397A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1798F2B067A5200A1397A /* SceneDelegate.swift */; };
+		0FC179922B067A5200A1397A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC179912B067A5200A1397A /* ViewController.swift */; };
+		0FC179952B067A5200A1397A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC179932B067A5200A1397A /* Main.storyboard */; };
+		0FC179972B067A5400A1397A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FC179962B067A5400A1397A /* Assets.xcassets */; };
+		0FC1799A2B067A5400A1397A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC179982B067A5400A1397A /* LaunchScreen.storyboard */; };
+		0FE557092B1F7F39003345FD /* BookmarksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE557082B1F7F39003345FD /* BookmarksTableViewCell.swift */; };
+		0FE5570B2B1F7F60003345FD /* BookmarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5570A2B1F7F60003345FD /* BookmarksView.swift */; };
+		0FE5570D2B1F7F82003345FD /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE5570C2B1F7F82003345FD /* BookmarksViewController.swift */; };
+		8709549E2B158C8C0090E9B8 /* DisplayRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709549D2B158C8C0090E9B8 /* DisplayRecipeView.swift */; };
+		870954A02B158CA40090E9B8 /* DisplayRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709549F2B158CA40090E9B8 /* DisplayRecipeViewController.swift */; };
+		870954A22B158F1D0090E9B8 /* RecipesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870954A12B158F1D0090E9B8 /* RecipesTableViewCell.swift */; };
+		870954A52B1592D50090E9B8 /* IngredientSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870954A42B1592D50090E9B8 /* IngredientSelectionViewController.swift */; };
+		870954A72B1592EE0090E9B8 /* IngredientSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870954A62B1592EE0090E9B8 /* IngredientSelectionView.swift */; };
+		8726951E2B1D4F330016C59F /* RecipeInstructionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8726951D2B1D4F330016C59F /* RecipeInstructionResponse.swift */; };
+		8770BB852B198F31003CF939 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8770BB842B198F31003CF939 /* Ingredient.swift */; };
+		8785B3F72B1B858800E483CD /* IngredientSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8785B3F62B1B858800E483CD /* IngredientSelectionTableViewCell.swift */; };
+		87E22F6A2B18510C00425A63 /* RecipeInstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E22F692B18510C00425A63 /* RecipeInstructionsView.swift */; };
+		87E22F6C2B18512200425A63 /* RecipeInstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E22F6B2B18512200425A63 /* RecipeInstructionsViewController.swift */; };
+		9B93A3DE2B18794D009DBE4A /* APIConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B93A3DD2B18794D009DBE4A /* APIConfigs.swift */; };
+		FE04201F97168801C12AC828 /* Pods_FridgeFeastFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7DE4FADC333281993A37AC /* Pods_FridgeFeastFinder.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F3D479A2B0D4499009E10A7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0F3D479E2B0D5004009E10A7 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		0F3D47A02B0D5070009E10A7 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		0F3D47A22B0D5852009E10A7 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		0F3D47A42B0D5864009E10A7 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		0F3D47AA2B150D85009E10A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0F3D47BA2B15114F009E10A7 /* ProgressSpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSpinnerViewController.swift; sourceTree = "<group>"; };
+		0F3D47BC2B15117A009E10A7 /* ProgressSpinnerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSpinnerDelegate.swift; sourceTree = "<group>"; };
+		0F3D47C02B152307009E10A7 /* CreateProgressIndicatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProgressIndicatorManager.swift; sourceTree = "<group>"; };
+		0F3D47C32B15342C009E10A7 /* DashBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardView.swift; sourceTree = "<group>"; };
+		0F3D47C52B153448009E10A7 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
+		0F3D47C82B153867009E10A7 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
+		0F3D47CC2B166EB4009E10A7 /* FFFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFFTabBarController.swift; sourceTree = "<group>"; };
+		0F3D47D12B169615009E10A7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0F3D47D32B169626009E10A7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		0F3D47DF2B1A7844009E10A7 /* FireBaseConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseConstants.swift; sourceTree = "<group>"; };
+		0F3D47E32B1A78D9009E10A7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0F3D47F52B1BCF58009E10A7 /* FindByIngredientsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindByIngredientsResponse.swift; sourceTree = "<group>"; };
+		0F3D47F72B1BDE68009E10A7 /* ProfileProgressManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProgressManager.swift; sourceTree = "<group>"; };
+		0F3D47F92B1BDF4B009E10A7 /* SignInProgressManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInProgressManager.swift; sourceTree = "<group>"; };
+		0F3D47FC2B1BF4B2009E10A7 /* UserRecipesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRecipesTableViewCell.swift; sourceTree = "<group>"; };
+		0F3D47FE2B1BF6C4009E10A7 /* UserRecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRecipesViewController.swift; sourceTree = "<group>"; };
+		0F3D48002B1BF72B009E10A7 /* PostEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEntity.swift; sourceTree = "<group>"; };
+		0F3D48022B1BF851009E10A7 /* UserRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRecipeView.swift; sourceTree = "<group>"; };
+		0F3D48042B1C1726009E10A7 /* UserRecipeUploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRecipeUploadView.swift; sourceTree = "<group>"; };
+		0F3D48062B1C18F4009E10A7 /* UserRecipeUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRecipeUploadViewController.swift; sourceTree = "<group>"; };
+		0F3D48082B1CF880009E10A7 /* IngredientSelectionAPICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientSelectionAPICall.swift; sourceTree = "<group>"; };
+		0F3D480A2B1D7189009E10A7 /* UserRecipeUploadProgressManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRecipeUploadProgressManager.swift; sourceTree = "<group>"; };
+		0FB8BD262B1E5441008EB7C9 /* RecipeInstructionsAPICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeInstructionsAPICall.swift; sourceTree = "<group>"; };
+		0FC1798A2B067A5200A1397A /* FridgeFeastFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FridgeFeastFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FC1798D2B067A5200A1397A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0FC1798F2B067A5200A1397A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0FC179912B067A5200A1397A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0FC179942B067A5200A1397A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0FC179962B067A5400A1397A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FC179992B067A5400A1397A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0FC1799B2B067A5400A1397A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FE557082B1F7F39003345FD /* BookmarksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewCell.swift; sourceTree = "<group>"; };
+		0FE5570A2B1F7F60003345FD /* BookmarksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksView.swift; sourceTree = "<group>"; };
+		0FE5570C2B1F7F82003345FD /* BookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
+		59FD704A9F43599DD09591EE /* Pods-FridgeFeastFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FridgeFeastFinder.debug.xcconfig"; path = "Target Support Files/Pods-FridgeFeastFinder/Pods-FridgeFeastFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		6A7DE4FADC333281993A37AC /* Pods_FridgeFeastFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FridgeFeastFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8709549D2B158C8C0090E9B8 /* DisplayRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayRecipeView.swift; sourceTree = "<group>"; };
+		8709549F2B158CA40090E9B8 /* DisplayRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayRecipeViewController.swift; sourceTree = "<group>"; };
+		870954A12B158F1D0090E9B8 /* RecipesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewCell.swift; sourceTree = "<group>"; };
+		870954A42B1592D50090E9B8 /* IngredientSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientSelectionViewController.swift; sourceTree = "<group>"; };
+		870954A62B1592EE0090E9B8 /* IngredientSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientSelectionView.swift; sourceTree = "<group>"; };
+		8726951D2B1D4F330016C59F /* RecipeInstructionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeInstructionResponse.swift; sourceTree = "<group>"; };
+		8770BB842B198F31003CF939 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		8785B3F62B1B858800E483CD /* IngredientSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		87E22F692B18510C00425A63 /* RecipeInstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeInstructionsView.swift; sourceTree = "<group>"; };
+		87E22F6B2B18512200425A63 /* RecipeInstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeInstructionsViewController.swift; sourceTree = "<group>"; };
+		9B93A3DD2B18794D009DBE4A /* APIConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfigs.swift; sourceTree = "<group>"; };
+		C68958E18919099E30AB9349 /* Pods-FridgeFeastFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FridgeFeastFinder.release.xcconfig"; path = "Target Support Files/Pods-FridgeFeastFinder/Pods-FridgeFeastFinder.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FC179872B067A5200A1397A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F3D47B62B150E18009E10A7 /* FirebaseFirestoreSwift in Frameworks */,
+				0F3D47B22B150E18009E10A7 /* FirebaseDatabaseSwift in Frameworks */,
+				0F3D47B42B150E18009E10A7 /* FirebaseFirestore in Frameworks */,
+				0F3D47B02B150E18009E10A7 /* FirebaseDatabase in Frameworks */,
+				0F3D47E92B1A8DCA009E10A7 /* SDWebImageSwiftUI in Frameworks */,
+				0F3D47AE2B150E18009E10A7 /* FirebaseAuth in Frameworks */,
+				0F3D47B82B150E18009E10A7 /* FirebaseStorage in Frameworks */,
+				FE04201F97168801C12AC828 /* Pods_FridgeFeastFinder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F3D47992B0D446F009E10A7 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0FC179912B067A5200A1397A /* ViewController.swift */,
+				0F3D479A2B0D4499009E10A7 /* MainView.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		0F3D479C2B0D4F10009E10A7 /* SignInScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0F3D479E2B0D5004009E10A7 /* SignInView.swift */,
+				0F3D47A02B0D5070009E10A7 /* SignInViewController.swift */,
+				0F3D47F92B1BDF4B009E10A7 /* SignInProgressManager.swift */,
+			);
+			path = SignInScreen;
+			sourceTree = "<group>";
+		};
+		0F3D479D2B0D4F20009E10A7 /* CreateAccountScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0F3D47A22B0D5852009E10A7 /* CreateAccountView.swift */,
+				0F3D47A42B0D5864009E10A7 /* CreateAccountViewController.swift */,
+				0F3D47C02B152307009E10A7 /* CreateProgressIndicatorManager.swift */,
+			);
+			path = CreateAccountScreen;
+			sourceTree = "<group>";
+		};
+		0F3D47B92B151117009E10A7 /* Progress Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				0F3D47BA2B15114F009E10A7 /* ProgressSpinnerViewController.swift */,
+				0F3D47BC2B15117A009E10A7 /* ProgressSpinnerDelegate.swift */,
+			);
+			path = "Progress Indicator";
+			sourceTree = "<group>";
+		};
+		0F3D47C22B152BCB009E10A7 /* DashBoardScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0F3D47C32B15342C009E10A7 /* DashBoardView.swift */,
+				0F3D47C52B153448009E10A7 /* DashBoardViewController.swift */,
+				0F3D47CC2B166EB4009E10A7 /* FFFTabBarController.swift */,
+			);
+			path = DashBoardScreen;
+			sourceTree = "<group>";
+		};
+		0F3D47C72B153850009E10A7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0F3D47C82B153867009E10A7 /* Validations.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		0F3D47D02B1695F1009E10A7 /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0F3D47D12B169615009E10A7 /* ProfileViewController.swift */,
+				0F3D47D32B169626009E10A7 /* ProfileView.swift */,
+				0F3D47F72B1BDE68009E10A7 /* ProfileProgressManager.swift */,
+			);
+			path = ProfileScreen;
+			sourceTree = "<group>";
+		};
+		0F3D47DE2B1A7825009E10A7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0F3D47DF2B1A7844009E10A7 /* FireBaseConstants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0F3D47FB2B1BF429009E10A7 /* Upload View Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				0F3D47FC2B1BF4B2009E10A7 /* UserRecipesTableViewCell.swift */,
+				0F3D47FE2B1BF6C4009E10A7 /* UserRecipesViewController.swift */,
+				0F3D48002B1BF72B009E10A7 /* PostEntity.swift */,
+				0F3D48022B1BF851009E10A7 /* UserRecipeView.swift */,
+				0F3D48042B1C1726009E10A7 /* UserRecipeUploadView.swift */,
+				0F3D48062B1C18F4009E10A7 /* UserRecipeUploadViewController.swift */,
+				0F3D480A2B1D7189009E10A7 /* UserRecipeUploadProgressManager.swift */,
+			);
+			path = "Upload View Recipes";
+			sourceTree = "<group>";
+		};
+		0FC179812B067A5200A1397A = {
+			isa = PBXGroup;
+			children = (
+				0FC1798C2B067A5200A1397A /* FridgeFeastFinder */,
+				0FC1798B2B067A5200A1397A /* Products */,
+				A5520F6DF9E6596A1BBC824A /* Pods */,
+				49BFD6BB7FE2C1CD99812B84 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0FC1798B2B067A5200A1397A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FC1798A2B067A5200A1397A /* FridgeFeastFinder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FC1798C2B067A5200A1397A /* FridgeFeastFinder */ = {
+			isa = PBXGroup;
+			children = (
+				0FE557072B1F7F1B003345FD /* BookmarksScreen */,
+				0F3D47FB2B1BF429009E10A7 /* Upload View Recipes */,
+				0F3D47DE2B1A7825009E10A7 /* Utils */,
+				9B93A3DD2B18794D009DBE4A /* APIConfigs.swift */,
+				8770BB832B198F19003CF939 /* Data Models */,
+				87E22F682B1850ED00425A63 /* RecipeInstructionsScreen */,
+				0F3D47D02B1695F1009E10A7 /* ProfileScreen */,
+				870954A32B1592AF0090E9B8 /* IngredientSelectionScreen */,
+				8709549C2B158C680090E9B8 /* DisplayRecipesScreen */,
+				0F3D47C72B153850009E10A7 /* Util */,
+				0F3D47C22B152BCB009E10A7 /* DashBoardScreen */,
+				0F3D47B92B151117009E10A7 /* Progress Indicator */,
+				0F3D479D2B0D4F20009E10A7 /* CreateAccountScreen */,
+				0F3D479C2B0D4F10009E10A7 /* SignInScreen */,
+				0F3D47992B0D446F009E10A7 /* MainScreen */,
+				0FC1798D2B067A5200A1397A /* AppDelegate.swift */,
+				0FC1798F2B067A5200A1397A /* SceneDelegate.swift */,
+				0FC179932B067A5200A1397A /* Main.storyboard */,
+				0FC179962B067A5400A1397A /* Assets.xcassets */,
+				0FC179982B067A5400A1397A /* LaunchScreen.storyboard */,
+				0FC1799B2B067A5400A1397A /* Info.plist */,
+				0F3D47AA2B150D85009E10A7 /* GoogleService-Info.plist */,
+			);
+			path = FridgeFeastFinder;
+			sourceTree = "<group>";
+		};
+		0FE557072B1F7F1B003345FD /* BookmarksScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0FE557082B1F7F39003345FD /* BookmarksTableViewCell.swift */,
+				0FE5570A2B1F7F60003345FD /* BookmarksView.swift */,
+				0FE5570C2B1F7F82003345FD /* BookmarksViewController.swift */,
+			);
+			path = BookmarksScreen;
+			sourceTree = "<group>";
+		};
+		49BFD6BB7FE2C1CD99812B84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A7DE4FADC333281993A37AC /* Pods_FridgeFeastFinder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8709549C2B158C680090E9B8 /* DisplayRecipesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8709549D2B158C8C0090E9B8 /* DisplayRecipeView.swift */,
+				8709549F2B158CA40090E9B8 /* DisplayRecipeViewController.swift */,
+				870954A12B158F1D0090E9B8 /* RecipesTableViewCell.swift */,
+			);
+			path = DisplayRecipesScreen;
+			sourceTree = "<group>";
+		};
+		870954A32B1592AF0090E9B8 /* IngredientSelectionScreen */ = {
+			isa = PBXGroup;
+			children = (
+				870954A42B1592D50090E9B8 /* IngredientSelectionViewController.swift */,
+				870954A62B1592EE0090E9B8 /* IngredientSelectionView.swift */,
+				8785B3F62B1B858800E483CD /* IngredientSelectionTableViewCell.swift */,
+				0F3D48082B1CF880009E10A7 /* IngredientSelectionAPICall.swift */,
+			);
+			path = IngredientSelectionScreen;
+			sourceTree = "<group>";
+		};
+		8770BB832B198F19003CF939 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				8770BB842B198F31003CF939 /* Ingredient.swift */,
+				0F3D47E32B1A78D9009E10A7 /* User.swift */,
+				0F3D47F52B1BCF58009E10A7 /* FindByIngredientsResponse.swift */,
+				8726951D2B1D4F330016C59F /* RecipeInstructionResponse.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		87E22F682B1850ED00425A63 /* RecipeInstructionsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				87E22F692B18510C00425A63 /* RecipeInstructionsView.swift */,
+				87E22F6B2B18512200425A63 /* RecipeInstructionsViewController.swift */,
+				0FB8BD262B1E5441008EB7C9 /* RecipeInstructionsAPICall.swift */,
+			);
+			path = RecipeInstructionsScreen;
+			sourceTree = "<group>";
+		};
+		A5520F6DF9E6596A1BBC824A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59FD704A9F43599DD09591EE /* Pods-FridgeFeastFinder.debug.xcconfig */,
+				C68958E18919099E30AB9349 /* Pods-FridgeFeastFinder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FC179892B067A5200A1397A /* FridgeFeastFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FC1799E2B067A5400A1397A /* Build configuration list for PBXNativeTarget "FridgeFeastFinder" */;
+			buildPhases = (
+				CA797AB5B599A1F3D7D281BB /* [CP] Check Pods Manifest.lock */,
+				0FC179862B067A5200A1397A /* Sources */,
+				0FC179872B067A5200A1397A /* Frameworks */,
+				0FC179882B067A5200A1397A /* Resources */,
+				A94410ACF2661911AF11A68B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FridgeFeastFinder;
+			packageProductDependencies = (
+				0F3D47AD2B150E18009E10A7 /* FirebaseAuth */,
+				0F3D47AF2B150E18009E10A7 /* FirebaseDatabase */,
+				0F3D47B12B150E18009E10A7 /* FirebaseDatabaseSwift */,
+				0F3D47B32B150E18009E10A7 /* FirebaseFirestore */,
+				0F3D47B52B150E18009E10A7 /* FirebaseFirestoreSwift */,
+				0F3D47B72B150E18009E10A7 /* FirebaseStorage */,
+				0F3D47E82B1A8DCA009E10A7 /* SDWebImageSwiftUI */,
+			);
+			productName = FridgeFeastFinder;
+			productReference = 0FC1798A2B067A5200A1397A /* FridgeFeastFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FC179822B067A5200A1397A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					0FC179892B067A5200A1397A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 0FC179852B067A5200A1397A /* Build configuration list for PBXProject "FridgeFeastFinder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FC179812B067A5200A1397A;
+			packageReferences = (
+				0F3D47AC2B150E18009E10A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				0F3D47E72B1A8DCA009E10A7 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = 0FC1798B2B067A5200A1397A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FC179892B067A5200A1397A /* FridgeFeastFinder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FC179882B067A5200A1397A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FC1799A2B067A5400A1397A /* LaunchScreen.storyboard in Resources */,
+				0F3D47AB2B150D85009E10A7 /* GoogleService-Info.plist in Resources */,
+				0FC179972B067A5400A1397A /* Assets.xcassets in Resources */,
+				0FC179952B067A5200A1397A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A94410ACF2661911AF11A68B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FridgeFeastFinder/Pods-FridgeFeastFinder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FridgeFeastFinder/Pods-FridgeFeastFinder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = " \"${PODS_ROOT}/Target Support Files/Pods-FridgeFeastFinder/Pods-FridgeFeastFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA797AB5B599A1F3D7D281BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FridgeFeastFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FC179862B067A5200A1397A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE5570D2B1F7F82003345FD /* BookmarksViewController.swift in Sources */,
+				0FC179922B067A5200A1397A /* ViewController.swift in Sources */,
+				0FB8BD272B1E5441008EB7C9 /* RecipeInstructionsAPICall.swift in Sources */,
+				0F3D47F62B1BCF58009E10A7 /* FindByIngredientsResponse.swift in Sources */,
+				8709549E2B158C8C0090E9B8 /* DisplayRecipeView.swift in Sources */,
+				0F3D48012B1BF72B009E10A7 /* PostEntity.swift in Sources */,
+				0F3D479B2B0D4499009E10A7 /* MainView.swift in Sources */,
+				0F3D47F82B1BDE68009E10A7 /* ProfileProgressManager.swift in Sources */,
+				0F3D47BB2B15114F009E10A7 /* ProgressSpinnerViewController.swift in Sources */,
+				0FE557092B1F7F39003345FD /* BookmarksTableViewCell.swift in Sources */,
+				0F3D47E42B1A78D9009E10A7 /* User.swift in Sources */,
+				870954A52B1592D50090E9B8 /* IngredientSelectionViewController.swift in Sources */,
+				0F3D47E02B1A7844009E10A7 /* FireBaseConstants.swift in Sources */,
+				0F3D47C62B153448009E10A7 /* DashBoardViewController.swift in Sources */,
+				870954A22B158F1D0090E9B8 /* RecipesTableViewCell.swift in Sources */,
+				87E22F6C2B18512200425A63 /* RecipeInstructionsViewController.swift in Sources */,
+				870954A72B1592EE0090E9B8 /* IngredientSelectionView.swift in Sources */,
+				0F3D48092B1CF880009E10A7 /* IngredientSelectionAPICall.swift in Sources */,
+				0F3D47FF2B1BF6C4009E10A7 /* UserRecipesViewController.swift in Sources */,
+				8785B3F72B1B858800E483CD /* IngredientSelectionTableViewCell.swift in Sources */,
+				0F3D47FA2B1BDF4B009E10A7 /* SignInProgressManager.swift in Sources */,
+				0F3D47C92B153867009E10A7 /* Validations.swift in Sources */,
+				0F3D47A12B0D5070009E10A7 /* SignInViewController.swift in Sources */,
+				870954A02B158CA40090E9B8 /* DisplayRecipeViewController.swift in Sources */,
+				0F3D48072B1C18F4009E10A7 /* UserRecipeUploadViewController.swift in Sources */,
+				87E22F6A2B18510C00425A63 /* RecipeInstructionsView.swift in Sources */,
+				0F3D47A32B0D5852009E10A7 /* CreateAccountView.swift in Sources */,
+				0F3D47BD2B15117A009E10A7 /* ProgressSpinnerDelegate.swift in Sources */,
+				8770BB852B198F31003CF939 /* Ingredient.swift in Sources */,
+				9B93A3DE2B18794D009DBE4A /* APIConfigs.swift in Sources */,
+				0F3D47A52B0D5864009E10A7 /* CreateAccountViewController.swift in Sources */,
+				0F3D47D22B169615009E10A7 /* ProfileViewController.swift in Sources */,
+				0F3D47D42B169626009E10A7 /* ProfileView.swift in Sources */,
+				0F3D47CD2B166EB4009E10A7 /* FFFTabBarController.swift in Sources */,
+				0F3D47C12B152307009E10A7 /* CreateProgressIndicatorManager.swift in Sources */,
+				0FE5570B2B1F7F60003345FD /* BookmarksView.swift in Sources */,
+				0FC1798E2B067A5200A1397A /* AppDelegate.swift in Sources */,
+				0F3D48052B1C1726009E10A7 /* UserRecipeUploadView.swift in Sources */,
+				0F3D47C42B15342C009E10A7 /* DashBoardView.swift in Sources */,
+				8726951E2B1D4F330016C59F /* RecipeInstructionResponse.swift in Sources */,
+				0F3D480B2B1D7189009E10A7 /* UserRecipeUploadProgressManager.swift in Sources */,
+				0FC179902B067A5200A1397A /* SceneDelegate.swift in Sources */,
+				0F3D48032B1BF851009E10A7 /* UserRecipeView.swift in Sources */,
+				0F3D47FD2B1BF4B2009E10A7 /* UserRecipesTableViewCell.swift in Sources */,
+				0F3D479F2B0D5004009E10A7 /* SignInView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0FC179932B067A5200A1397A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FC179942B067A5200A1397A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0FC179982B067A5400A1397A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FC179992B067A5400A1397A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0FC1799C2B067A5400A1397A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0FC1799D2B067A5400A1397A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FC1799F2B067A5400A1397A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59FD704A9F43599DD09591EE /* Pods-FridgeFeastFinder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AA7289CZA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FridgeFeastFinder/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuios.FridgeFeastFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0FC179A02B067A5400A1397A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C68958E18919099E30AB9349 /* Pods-FridgeFeastFinder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AA7289CZA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FridgeFeastFinder/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuios.FridgeFeastFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FC179852B067A5200A1397A /* Build configuration list for PBXProject "FridgeFeastFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FC1799C2B067A5400A1397A /* Debug */,
+				0FC1799D2B067A5400A1397A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FC1799E2B067A5400A1397A /* Build configuration list for PBXNativeTarget "FridgeFeastFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FC1799F2B067A5400A1397A /* Debug */,
+				0FC179A02B067A5400A1397A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0F3D47AC2B150E18009E10A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		0F3D47E72B1A8DCA009E10A7 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0F3D47AD2B150E18009E10A7 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F3D47AC2B150E18009E10A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		0F3D47AF2B150E18009E10A7 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F3D47AC2B150E18009E10A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		0F3D47B12B150E18009E10A7 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F3D47AC2B150E18009E10A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		0F3D47B32B150E18009E10A7 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F3D47AC2B150E18009E10A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		0F3D47B52B150E18009E10A7 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F3D47AC2B150E18009E10A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		0F3D47B72B150E18009E10A7 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F3D47AC2B150E18009E10A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		0F3D47E82B1A8DCA009E10A7 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F3D47E72B1A8DCA009E10A7 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0FC179822B067A5200A1397A /* Project object */;
+}
